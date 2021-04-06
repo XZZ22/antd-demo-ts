@@ -1,14 +1,11 @@
 import React, { FC } from 'react';
 import './index.less';
 import { Form, Input, Button, Card } from 'antd';
+import { withRouter, RouteComponentProps } from 'react-router-dom'
 
-type IProps = {
-    isLogin: boolean
-}
-const Login: FC<IProps> = (props) => {
+const Login: FC<RouteComponentProps> = (props) => {
   const onFinish = (values: any) => {
     console.log('Success:', values);
-    console.log(this,"this")
     console.log(props,"props")
   };
   const onFailed = (errorInfo: any) => {
@@ -44,4 +41,4 @@ const Login: FC<IProps> = (props) => {
   )
 }
 
-export default Login;
+export default withRouter(Login as any);
