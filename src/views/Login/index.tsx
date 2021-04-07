@@ -13,7 +13,7 @@ const Login: FC<RouteComponentProps> = (props) => {
   };
   return (
     <div className="Login_views">
-      <Card title="登录页面" style={{ width: 500, minHeight: '300px', boxShadow:'1px 3px 8px 0 rgb(30 112 72 / 35%)' }}>
+      <Card title="登录页面" style={{ width: 400, minHeight: '300px', boxShadow:'1px 3px 8px 0 rgb(30 112 72 / 35%)' }}>
         <Form
           name="basic"
           onFinish={onFinish}
