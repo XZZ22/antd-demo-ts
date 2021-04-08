@@ -5,8 +5,7 @@ import { withRouter, RouteComponentProps } from 'react-router-dom'
 
 const Login: FC<RouteComponentProps> = (props) => {
   const onFinish = (values: any) => {
-    console.log('Success:', values);
-    console.log(props,"props")
+    props.history.replace('/page')
   };
   const onFailed = (errorInfo: any) => {
     console.log('Failed:', errorInfo);
